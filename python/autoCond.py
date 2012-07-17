@@ -6,7 +6,7 @@ autoCond = {
     'hltonline' : 'GR_H_V29::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
     'hltonline11' : ('GR_H_V29::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                      'L1GtTriggerMenu_L1Menu_Collisions2012_v1a_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T'),
-    'starthi'   : 'STARTHI52_V9::All'
+    'starthi'   : 'STARTHI52_V9::All',
 
 
     'startup_5E33v4'   : ('START52_V10::All',
