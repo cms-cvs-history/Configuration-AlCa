@@ -75,27 +75,27 @@ autoCond = {
                           ),
 
     # dedicated GlobalTags for running the frozen HLT menus on data
-    'hltonline_5E33v4'  : ( 'GR_H_V30::All',
+    'hltonline_5E33v4'  : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 menu 2012 v0
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v0_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
-    'hltonline_7E33v2'  : ( 'GR_H_V30::All',
+    'hltonline_7E33v2'  : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 menu 2012 v1
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v1a_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
-    'hltonline_7E33v3'  : ( 'GR_H_V30::All',
+    'hltonline_7E33v3'  : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 menu 2012 v2
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v2_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
-    'hltonline_7E33v4'  : ( 'GR_H_V30::All',
+    'hltonline_7E33v4'  : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 menu 2012 v2
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v2_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
-    'hltonline_GRun'    : ( 'GR_H_V30::All',
+    'hltonline_GRun'    : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 menu 2012 v2
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v2_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
-    'hltonline_HIon'    : ( 'GR_H_V30::All',
+    'hltonline_HIon'    : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
                             # L1 heavy ions menu 2011 v0
                             'L1GtTriggerMenu_L1Menu_CollisionsHeavyIons2011_v0_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
