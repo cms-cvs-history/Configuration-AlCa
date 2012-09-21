@@ -12,7 +12,7 @@ autoCond = {
     'hltonline'         :   'GR_R_53_V14::All',
     # GlobalTag for running HLT on 2011 data: same as 'hltonline', override the L1 menu with 2012 v1
     'hltonline11'       : ( 'GR_R_53_V14::All',
-                            # L1 menu 2012 v3
+                            # L1 menu 2012 v1
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v1a_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                           ),
 
