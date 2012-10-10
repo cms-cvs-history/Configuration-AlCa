@@ -10,11 +10,6 @@ autoCond = {
     # GlobalTag for running HLT on recent data: this should be the same as 'com10' until a compatible GR_H tag is available, 
     # then it should point to the GR_H tag and override the connection string and pfnPrefix for use offline
     'hltonline'         :   'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
-    # GlobalTag for running HLT on 2011 data: same as 'hltonline', override the L1 menu with 2012 v1
-    'hltonline11'       : ( 'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
-                            # L1 menu 2012 v1
-                            'L1GtTriggerMenu_L1Menu_Collisions2012_v1a_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
-                          ),
 }
 
 
