@@ -10,17 +10,12 @@ autoCond = {
     # GlobalTag for running HLT on recent data: this should be the same as 'com10' until a compatible GR_H tag is available, 
     # then it should point to the GR_H tag and override the connection string and pfnPrefix for use offline
     'hltonline'         :   'GR_P_V42::All',
-    # GlobalTag for running HLT on 2011 data: same as 'hltonline', override the L1 menu with 2012 v1
-    'hltonline11'       : ( 'GR_P_V42::All',
-                            # L1 menu 2012 v1
-                            'L1GtTriggerMenu_L1Menu_Collisions2012_v1a_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
-                          ),
 
     # dedicated GlobalTags for MC production with the frozen HLT menus
     'startup_5E33v4'    : ( 'START53_V10::All',
                             # L1 menu 2012 v0
                             'L1GtTriggerMenu_L1Menu_Collisions2012_v0_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
-                            # old L1 CSCTF configuration
+                            # L1 CSCTF configuration used up to Run2012A
                             'L1MuCSCPtLut_key-10_mc,L1MuCSCPtLutRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
                             # L1 DTTF settings used up to Run2012B
                             'L1MuDTTFParameters_dttf11_TSC_09_17_col_mc,L1MuDTTFParametersRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
