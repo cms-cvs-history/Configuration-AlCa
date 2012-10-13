@@ -6,10 +6,10 @@ autoCond = {
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
     'starthi'           :   'STARTHI53_V8::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
-    'com10'             :   'GR_R_53_V14::All',
+    'com10'             :   'GR_R_53_V15::All',
     # GlobalTag for running HLT on recent data: this should be the GR_P (prompt reco) global tag until a compatible GR_H tag is available,
     # then it should point to the GR_H tag and override the connection string and pfnPrefix for use offline
-    'hltonline'         :   'GR_P_V42::All',
+    'hltonline'         :   'GR_P_V42B::All',
 }
 
 
@@ -81,7 +81,8 @@ conditions_L1_HIRun2011 = (
 
 # HLT Jet Energy Corrections
 conditions_HLT_JECs = (
-    # HLT particle flow jet energy corrections
+    # HLT 2012 jet energy corrections
+    'JetCorrectorParametersCollection_Jec11_V12_AK5Calo,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5CaloHLT',
     'JetCorrectorParametersCollection_AK5PF_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFHLT',
     'JetCorrectorParametersCollection_AK5PFchs_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFchsHLT',
 )
@@ -90,13 +91,16 @@ conditions_HLT_JECs = (
 
 # dedicated GlobalTags for MC production with the frozen HLT menus
 autoCond['startup_5E33v4']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012A
+                             + conditions_L1_Run2012A \
+                             + conditions_HLT_JECs
 
 autoCond['startup_7E33v2']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012B
+                             + conditions_L1_Run2012B \
+                             + conditions_HLT_JECs
 
 autoCond['startup_7E33v3']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012C
+                             + conditions_L1_Run2012C \
+                             + conditions_HLT_JECs
 
 autoCond['startup_7E33v4']   = ( autoCond['startup'], ) \
                              + conditions_L1_Run2012C \
@@ -125,20 +129,16 @@ autoCond['hltonline_7E33v3'] = ( autoCond['hltonline'], ) \
                              + conditions_L1_Run2012C
 
 autoCond['hltonline_7E33v4'] = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012C \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012C
 
 autoCond['hltonline_8E33v1'] = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['hltonline_GRun']   = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['hltonline_HIon']   = ( autoCond['hltonline'], ) \
-                             + conditions_L1_HIRun2011 \
-                             + conditions_HLT_JECs
+                             + conditions_L1_HIRun2011
 
 # dedicated GlobalTags for running RECO and the frozen HLT menus on data
 autoCond['com10_5E33v4']     = ( autoCond['com10'], ) \
@@ -151,17 +151,13 @@ autoCond['com10_7E33v3']     = ( autoCond['com10'], ) \
                              + conditions_L1_Run2012C
 
 autoCond['com10_7E33v4']     = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012C \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012C
 
 autoCond['com10_8E33v1']     = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['com10_GRun']       = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['com10_HIon']       = ( autoCond['com10'], ) \
-                             + conditions_L1_HIRun2011 \
-                             + conditions_HLT_JECs
+                             + conditions_L1_HIRun2011
