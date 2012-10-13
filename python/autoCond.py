@@ -81,7 +81,7 @@ conditions_L1_HIRun2011 = (
 
 # HLT Jet Energy Corrections
 conditions_HLT_JECs = (
-    # HLT particle flow jet energy corrections
+    # HLT 2012 jet energy corrections
     'JetCorrectorParametersCollection_AK5PF_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFHLT',
     'JetCorrectorParametersCollection_AK5PFchs_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFchsHLT',
 )
