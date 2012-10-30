@@ -1,8 +1,8 @@
 autoCond = { 
     # GlobalTag for MC production with perfectly aligned and calibrated detector
-    'mc'                :   'MC_53_V9::All',
+    'mc'                :   'MC_53_V13::All',
     # GlobalTag for MC production with realistic alignment and calibrations
-    'startup'           :   'START53_V10::All',
+    'startup'           :   'START53_V13::All',
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
     'starthi'           :   'STARTHI53_V8::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
@@ -82,7 +82,7 @@ conditions_L1_HIRun2011 = (
 # HLT Jet Energy Corrections
 conditions_HLT_JECs = (
     # HLT 2012 jet energy corrections
-    'JetCorrectorParametersCollection_Jec11_V12_AK5Calo,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5CaloHLT',
+    'JetCorrectorParametersCollection_Jec11_V12_AK5CaloHLT,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5CaloHLT',
     'JetCorrectorParametersCollection_AK5PF_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFHLT',
     'JetCorrectorParametersCollection_AK5PFchs_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFchsHLT',
 )
@@ -91,28 +91,22 @@ conditions_HLT_JECs = (
 
 # dedicated GlobalTags for MC production with the frozen HLT menus
 autoCond['startup_5E33v4']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012A \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012A
 
 autoCond['startup_7E33v2']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012B \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012B
 
 autoCond['startup_7E33v3']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012C \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012C
 
 autoCond['startup_7E33v4']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012C \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012C
 
 autoCond['startup_8E33v1']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['startup_GRun']     = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['starthi_HIon']     = ( autoCond['starthi'], ) \
                              + conditions_L1_HIRun2011 \
