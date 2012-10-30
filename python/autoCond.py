@@ -1,15 +1,15 @@
 autoCond = { 
     # GlobalTag for MC production with perfectly aligned and calibrated detector
-    'mc'                :   'MC_52_V10::All',
+    'mc'                :   'MC_52_V16::All',
     # GlobalTag for MC production with realistic alignment and calibrations
-    'startup'           :   'START52_V10::All',
+    'startup'           :   'START52_V16::All',
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
     'starthi'           :   'STARTHI52_V9::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
     'com10'             :   'GR_R_52_V7::All',
     # GlobalTag for running HLT on recent data: this should be the same as 'com10' until a compatible GR_H tag is available, 
     # then it should point to the GR_H tag and override the connection string and pfnPrefix for use offline
-    'hltonline'         :   'GR_H_V30::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
+    'hltonline'         :   'GR_H_V32::All,frontier://FrontierProd/CMS_COND_31X_GLOBALTAG,frontier://FrontierProd/',
 }
 
 
@@ -82,6 +82,7 @@ conditions_L1_HIRun2011 = (
 # HLT Jet Energy Corrections
 conditions_HLT_JECs = (
     # HLT 2012 jet energy corrections
+    'JetCorrectorParametersCollection_Jec11_V12_AK5CaloHLT,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5CaloHLT',
     'JetCorrectorParametersCollection_AK5PF_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFHLT',
     'JetCorrectorParametersCollection_AK5PFchs_2012_V8_hlt_mc,JetCorrectionsRecord,frontier://FrontierProd/CMS_COND_31X_PHYSICSTOOLS,AK5PFchsHLT',
 )
@@ -103,12 +104,10 @@ autoCond['startup_7E33v4']   = ( autoCond['startup'], ) \
                              + conditions_HLT_JECs
 
 autoCond['startup_8E33v1']   = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['startup_GRun']     = ( autoCond['startup'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['starthi_HIon']     = ( autoCond['starthi'], ) \
                              + conditions_L1_HIRun2011 \
@@ -125,16 +124,13 @@ autoCond['hltonline_7E33v3'] = ( autoCond['hltonline'], ) \
                              + conditions_L1_Run2012C
 
 autoCond['hltonline_7E33v4'] = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012C \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012C
 
 autoCond['hltonline_8E33v1'] = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['hltonline_GRun']   = ( autoCond['hltonline'], ) \
-                             + conditions_L1_Run2012D \
-                             + conditions_HLT_JECs
+                             + conditions_L1_Run2012D
 
 autoCond['hltonline_HIon']   = ( autoCond['hltonline'], ) \
                              + conditions_L1_HIRun2011 \
