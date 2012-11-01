@@ -1,10 +1,10 @@
 autoCond = { 
     # GlobalTag for MC production with perfectly aligned and calibrated detector
-    'mc'                :   'MC_53_V13::All',
+    'mc'                :   'MC_53_V14::All',
     # GlobalTag for MC production with realistic alignment and calibrations
-    'startup'           :   'START53_V13::All',
+    'startup'           :   'START53_V14::All',
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
-    'starthi'           :   'STARTHI53_V8::All',
+    'starthi'           :   'STARTHI53_V10::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
     'com10'             :   'GR_R_53_V15::All',
     # GlobalTag for running HLT on recent data: this should be the GR_P (prompt reco) global tag until a compatible GR_H tag is available,
