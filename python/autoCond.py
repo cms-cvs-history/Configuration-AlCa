@@ -138,13 +138,16 @@ autoCond['hltonline_HIon']   = ( autoCond['hltonline'], ) \
 
 # dedicated GlobalTags for running RECO and the frozen HLT menus on data
 autoCond['com10_5E33v4']     = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012A
+                             + conditions_L1_Run2012A \
+                             + conditions_HLT_JECs
 
 autoCond['com10_7E33v2']     = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012B
+                             + conditions_L1_Run2012B \
+                             + conditions_HLT_JECs
 
 autoCond['com10_7E33v3']     = ( autoCond['com10'], ) \
-                             + conditions_L1_Run2012C
+                             + conditions_L1_Run2012C \
+                             + conditions_HLT_JECs
 
 autoCond['com10_7E33v4']     = ( autoCond['com10'], ) \
                              + conditions_L1_Run2012C \
