@@ -128,7 +128,7 @@ autoCond['starthi_HIon']     = ( autoCond['starthi'], ) \
                              + conditions_L1_HIRun2011 \
                              + conditions_HLT_JECs
 
-autoCond['startup_PARun2013'] = ( autoCond['startup'], ) \
+autoCond['startup_PIon']     = ( autoCond['startup'], ) \
                              + conditions_L1_PARun2013 \
                              + conditions_HLT_JECs
 
@@ -156,7 +156,7 @@ autoCond['hltonline_HIon']   = ( autoCond['hltonline'], ) \
                              + conditions_L1_HIRun2011 \
                              + conditions_HLT_JECs
 
-autoCond['hltonline_PARun2013'] = ( autoCond['hltonline'], ) \
+autoCond['hltonline_PIon']   = ( autoCond['hltonline'], ) \
                              + conditions_L1_PARun2013 \
                              + conditions_HLT_JECs
 
@@ -190,7 +190,7 @@ autoCond['com10_HIon']       = ( autoCond['com10'], ) \
                              + conditions_L1_HIRun2011 \
                              + conditions_HLT_JECs
 
-autoCond['com10_PARun2013']  = ( autoCond['com10'], ) \
+autoCond['com10_PIon']       = ( autoCond['com10'], ) \
                              + conditions_L1_PARun2013 \
                              + conditions_HLT_JECs
 
