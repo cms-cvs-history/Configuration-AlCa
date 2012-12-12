@@ -83,7 +83,7 @@ conditions_L1_HIRun2011 = (
 
 # L1 configuration used during PARun2013
 conditions_L1_PARun2013 = (
-    # L1 GT menu 2012_v3, used during Run2012D (to be replaced by CollisionsHeavyIons2013)
+    # L1 pPb menu 2013 v0
     'L1GtTriggerMenu_L1Menu_CollisionsHeavyIons2013_v0_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
     # L1 GCT configuration without jet seed threshold (same as 2012B)
     'L1GctJetFinderParams_GCTPhysics_2011_09_01_B_mc,L1GctJetFinderParamsRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
