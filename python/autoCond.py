@@ -6,7 +6,7 @@ autoCond = {
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
     'starthi'           :   'STARTHI52_V9::All',
     # GlobalTag for MC production of p-Pb events with realistic alignment and calibrations
-    'startpa'           :   'STARTHI61_V10::All',
+    'startpa'           :   'STARTHI52_V12::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
     'com10'             :   'GR_R_52_V7::All',
     # GlobalTag for running HLT on recent data: this should be the same as 'com10' until a compatible GR_H tag is available, 
