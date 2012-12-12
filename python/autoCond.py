@@ -5,6 +5,8 @@ autoCond = {
     'startup'           :   'START52_V16::All',
     # GlobalTag for MC production of Heavy Ions events with realistic alignment and calibrations
     'starthi'           :   'STARTHI52_V9::All',
+    # GlobalTag for MC production of p-Pb events with realistic alignment and calibrations
+    'startpa'           :   'STARTHI61_V10::All',
     # GlobalTag for data reprocessing: this should always be the GR_R tag
     'com10'             :   'GR_R_52_V7::All',
     # GlobalTag for running HLT on recent data: this should be the same as 'com10' until a compatible GR_H tag is available, 
@@ -81,8 +83,8 @@ conditions_L1_HIRun2011 = (
 
 # L1 configuration used during PARun2013
 conditions_L1_PARun2013 = (
-    # L1 GT menu 2012_v3, used during Run2012D (to be replaced by CollisionsHeavyIons2013)
-    'L1GtTriggerMenu_L1Menu_Collisions2012_v3_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
+    # L1 pPb menu 2013 v0
+    'L1GtTriggerMenu_L1Menu_CollisionsHeavyIons2013_v0_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
     # L1 GCT configuration without jet seed threshold (same as 2012B)
     'L1GctJetFinderParams_GCTPhysics_2011_09_01_B_mc,L1GctJetFinderParamsRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
     'L1HfRingEtScale_GCTPhysics_2011_09_01_B_mc,L1HfRingEtScaleRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
@@ -128,9 +130,7 @@ autoCond['starthi_HIon']     = ( autoCond['starthi'], ) \
                              + conditions_L1_HIRun2011 \
                              + conditions_HLT_JECs
 
-autoCond['startup_PIon']     = ( autoCond['startup'], ) \
-                             + conditions_L1_PARun2013 \
-                             + conditions_HLT_JECs
+autoCond['startup_PIon']     = ( autoCond['startpa'], )
 
 
 # dedicated GlobalTags for running the frozen HLT menus on data
@@ -157,8 +157,7 @@ autoCond['hltonline_HIon']   = ( autoCond['hltonline'], ) \
                              + conditions_HLT_JECs
 
 autoCond['hltonline_PIon']   = ( autoCond['hltonline'], ) \
-                             + conditions_L1_PARun2013 \
-                             + conditions_HLT_JECs
+                             + conditions_L1_PARun2013
 
 
 # dedicated GlobalTags for running RECO and the frozen HLT menus on data
@@ -191,6 +190,4 @@ autoCond['com10_HIon']       = ( autoCond['com10'], ) \
                              + conditions_HLT_JECs
 
 autoCond['com10_PIon']       = ( autoCond['com10'], ) \
-                             + conditions_L1_PARun2013 \
-                             + conditions_HLT_JECs
-
+                             + conditions_L1_PARun2013
