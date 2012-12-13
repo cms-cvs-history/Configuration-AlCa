@@ -190,4 +190,5 @@ autoCond['com10_HIon']       = ( autoCond['com10'], ) \
                              + conditions_HLT_JECs
 
 autoCond['com10_PIon']       = ( autoCond['com10'], ) \
-                             + conditions_L1_PARun2013
+                             + conditions_L1_PARun2013 \
+                             + conditions_HLT_JECs
