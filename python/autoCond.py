@@ -15,6 +15,12 @@ autoCond = {
 }
 
 
+# L1 configuration used during Run2011
+conditions_L1_Run2011 = (
+    # L1 GT menu 2011 v6, used during Run2011
+    'L1GtTriggerMenu_L1Menu_Collisions2011_v6_mc,L1GtTriggerMenuRcd,frontier://FrontierProd/CMS_COND_31X_L1T',
+)
+
 # L1 configuration used during Run2012A
 conditions_L1_Run2012A = (
     # L1 GT menu 2012 v0, used during Run2012A
@@ -106,6 +112,9 @@ conditions_HLT_JECs = (
 
 
 # dedicated GlobalTags for MC production with the frozen HLT menus
+autoCond['startup_2011']   = ( autoCond['startup'], ) \
+                             + conditions_L1_Run2011
+
 autoCond['startup_5E33v4']   = ( autoCond['startup'], ) \
                              + conditions_L1_Run2012A
 
@@ -131,6 +140,9 @@ autoCond['starthi_HIon']     = ( autoCond['starthi'], ) \
 autoCond['startup_PIon']     = ( autoCond['startpa'], )
 
 # dedicated GlobalTags for running the frozen HLT menus on data
+autoCond['hltonline_2011'] = ( autoCond['hltonline'], ) \
+                             + conditions_L1_Run2011
+
 autoCond['hltonline_5E33v4'] = ( autoCond['hltonline'], ) \
                              + conditions_L1_Run2012A
 
@@ -156,6 +168,9 @@ autoCond['hltonline_PIon']   = ( autoCond['hltonline'], ) \
                              + conditions_L1_PARun2013
 
 # dedicated GlobalTags for running RECO and the frozen HLT menus on data
+autoCond['com10_2011']     = ( autoCond['com10'], ) \
+                             + conditions_L1_Run2011
+
 autoCond['com10_5E33v4']     = ( autoCond['com10'], ) \
                              + conditions_L1_Run2012A
 
